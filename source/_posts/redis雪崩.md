@@ -1,7 +1,9 @@
 ---
-title: redis雪崩
+title: Redis雪崩
 date: 2018-03-13 15:30:31
 tags:
+	- Redis
+	- 缓存
 ---
 
 # redis雪崩会怎么样?

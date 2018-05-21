@@ -7,3 +7,6 @@ public/
 .deploy*/
 .deploy_git
 *.bak
+source/assets/
+package-lock.json
+dist/
