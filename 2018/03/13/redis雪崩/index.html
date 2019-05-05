@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>redis雪崩 | rocky的笔记本</title>
+  <title>Redis雪崩 | rocky的笔记本</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="redis雪崩会怎么样?现象最近在公司遇到一次缓存雪崩，虽然DB没有真的崩溃，但是对于业务还是造成了一定的影响。所以想整理一下关于这个问题的一些看法和解决方案。 缓存雪崩是什么？baidu一下这个问题，其实百度给出了很详细的解释和一定的解决方案，这里就不赘述了。 问题的根本在哪里？传统的使用redis的方法,都是先调用redis的get方法,如果不存在则调用数据库,成功后插入数据。如果数据为空，或">
+<meta name="keywords" content="Redis,缓存">
 <meta property="og:type" content="article">
-<meta property="og:title" content="redis雪崩">
+<meta property="og:title" content="Redis雪崩">
 <meta property="og:url" content="http://yoursite.com/2018/03/13/redis雪崩/index.html">
 <meta property="og:site_name" content="rocky的笔记本">
 <meta property="og:description" content="redis雪崩会怎么样?现象最近在公司遇到一次缓存雪崩，虽然DB没有真的崩溃，但是对于业务还是造成了一定的影响。所以想整理一下关于这个问题的一些看法和解决方案。 缓存雪崩是什么？baidu一下这个问题，其实百度给出了很详细的解释和一定的解决方案，这里就不赘述了。 问题的根本在哪里？传统的使用redis的方法,都是先调用redis的get方法,如果不存在则调用数据库,成功后插入数据。如果数据为空，或">
-<meta property="og:updated_time" content="2018-05-21T01:39:14.000Z">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-21T02:19:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="redis雪崩">
+<meta name="twitter:title" content="Redis雪崩">
 <meta name="twitter:description" content="redis雪崩会怎么样?现象最近在公司遇到一次缓存雪崩，虽然DB没有真的崩溃，但是对于业务还是造成了一定的影响。所以想整理一下关于这个问题的一些看法和解决方案。 缓存雪崩是什么？baidu一下这个问题，其实百度给出了很详细的解释和一定的解决方案，这里就不赘述了。 问题的根本在哪里？传统的使用redis的方法,都是先调用redis的get方法,如果不存在则调用数据库,成功后插入数据。如果数据为空，或">
   
     <link rel="alternative" href="/atom.xml" title="rocky的笔记本" type="application/atom+xml">
@@ -34,6 +36,16 @@
   
 
   
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?90435c7041fa2039a7b3006b5b47a76e";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 
 </head>
 
@@ -160,7 +172,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      redis雪崩
+      Redis雪崩
     </h1>
   
 
@@ -193,7 +205,7 @@
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <img class="reward-img" src="/img/preloader.gif">
                       <span class="reward-type">支付宝</span>
                     </div>
                     
@@ -210,6 +222,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Redis</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">缓存</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -328,7 +355,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 rocky hsu
+    		&copy; 2019 rocky hsu
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -420,6 +447,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">helloworld</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Redis</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">缓存</a>
               </li>
              
               <li class="article-tag-list-item">
